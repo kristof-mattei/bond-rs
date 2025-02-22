@@ -33,9 +33,7 @@ fn quz() -> &'static str {
     "Quz"
 }
 
-fn main() -> Result<(), color_eyre::Report> {
-    color_eyre::install()?;
-
+fn main() -> Result<(), anyhow::Error> {
     println!("{}", foo());
     println!("{}", bar());
     println!("{}", quz());
