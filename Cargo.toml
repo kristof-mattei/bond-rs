@@ -7,8 +7,8 @@ rust-version = "1.85.0"
 authors = ["Kristof Mattei"]
 description = "Rust seed application"
 license-file = "LICENSE"
-categories = ["starter", "seed"]
-keywords = ["integrity", "seed", "starter", "docker", "release"]
+categories = ["api-bindings"]
+keywords = ["bond"]
 repository = "https://github.com/kristof-mattei/bond-rs"
 
 [lints.clippy]
