@@ -36,7 +36,7 @@ non_ascii_idents = { level = "deny", priority = 127 }
 coverage = []
 
 [dependencies]
-anyhow = "1.0.96"
+anyhow = "1.0.97"
 
 # OpenSSL for musl
 # [target.'cfg(all(any(target_arch="x86_64", target_arch="aarch64"), target_os="linux", target_env="musl"))'.dependencies]
