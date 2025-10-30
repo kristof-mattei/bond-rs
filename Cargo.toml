@@ -11,10 +11,6 @@ keywords = ["bond"]
 repository = "https://github.com/kristof-mattei/bond-rs"
 include = ["src/**", "/LICENSE", "/LICENSE-*"]
 
-[dependencies]
-color-eyre = "0.6.5"
-mimalloc = { version = "0.1.48", features = ["v3"] }
-
 [lints.clippy]
 # don't stop from compiling / running
 all = "warn"
