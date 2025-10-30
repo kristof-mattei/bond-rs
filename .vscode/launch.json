@@ -5,18 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "lldb",
-            "request": "launch",
             "name": "Debug executable 'bond-rs'",
+            "type": "lldb",
+            "request": "launch",
             "cargo": {
-                "args": ["build", "--bin=bond-rs", "--package=bond-rs"],
-                "filter": {
-                    "name": "bond-rs",
-                    "kind": "bin"
-                }
+                "args": ["run", "--bin=bond-rs"]
             },
             "args": [],
-            "cwd": "${workspaceFolder}",
             "env": {
                 "RUST_BACKTRACE": "1",
                 "RUST_LOG": "DEBUG,bond_rs=TRACE"
@@ -25,23 +20,12 @@
             "terminal": "integrated"
         },
         {
-            "type": "lldb",
-            "request": "launch",
             "name": "Debug unit tests in executable 'bond-rs'",
+            "type": "lldb",
+            "request": "launch",
             "cargo": {
-                "args": [
-                    "test",
-                    "--no-run",
-                    "--bin=bond-rs",
-                    "--package=bond-rs"
-                ],
-                "filter": {
-                    "name": "bond-rs",
-                    "kind": "bin"
-                }
+                "args": ["test", "--bin=bond-rs"]
             },
-            "args": [],
-            "cwd": "${workspaceFolder}",
             "env": {
                 "RUST_BACKTRACE": "1",
                 "RUST_LOG": "DEBUG,bond_rs=TRACE"
@@ -50,23 +34,12 @@
             "terminal": "integrated"
         },
         {
+            "name": "Debug integration test 'integration_tests'",
             "type": "lldb",
             "request": "launch",
-            "name": "Debug integration test 'integration_tests'",
             "cargo": {
-                "args": [
-                    "test",
-                    "--no-run",
-                    "--test=integration_tests",
-                    "--package=bond-rs"
-                ],
-                "filter": {
-                    "name": "integration_tests",
-                    "kind": "test"
-                }
+                "args": ["test", "--test=integration_tests"]
             },
-            "args": [],
-            "cwd": "${workspaceFolder}",
             "env": {
                 "RUST_BACKTRACE": "1",
                 "RUST_LOG": "DEBUG,bond_rs=TRACE"
