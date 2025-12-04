@@ -237,3 +237,6 @@ uninlined_format_args = { level = "allow", priority = 127 }
 [lints.rust]
 let_underscore_drop = { level = "deny", priority = 127 }
 non_ascii_idents = { level = "deny", priority = 127 }
+
+[dependencies]
+unicode-segmentation = "1.12.0"
