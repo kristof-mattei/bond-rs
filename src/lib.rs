@@ -1,6 +1,6 @@
 use unicode_segmentation::UnicodeSegmentation as _;
 
-/// Reverses a Unicode string
+/// Reverses a Unicode string.
 pub fn reverse_unicode<S: AsRef<str>>(input: S) -> String {
     input.as_ref().graphemes(true).rev().collect()
 }
