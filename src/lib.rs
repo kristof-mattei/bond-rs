@@ -7,6 +7,8 @@ pub fn reverse_unicode<S: AsRef<str>>(input: S) -> String {
 
 #[cfg(test)]
 mod test {
+    use pretty_assertions::assert_eq;
+
     use crate::reverse_unicode;
 
     #[test]
