@@ -243,7 +243,7 @@ let_underscore_drop = { level = "deny", priority = 127 }
 non_ascii_idents = { level = "deny", priority = 127 }
 
 [dependencies]
-unicode-segmentation = "1.13.0"
+unicode-segmentation = "1.13.1"
 
 [dev-dependencies]
 pretty_assertions = "=1.4.1"
