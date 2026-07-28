@@ -11,6 +11,10 @@ keywords = ["bond"]
 repository = "https://github.com/kristof-mattei/bond-rs"
 include = ["src/**", "/LICENSE", "/LICENSE-*"]
 
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
+
 [lints.clippy]
 # don't stop from compiling / running
 all = "warn"
