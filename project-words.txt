@@ -28,7 +28,6 @@ occurences
 olle
 olleh
 pathbuf
-pids
 postprocessors
 prereleased
 profraw
