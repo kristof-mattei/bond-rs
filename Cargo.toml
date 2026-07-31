@@ -11,6 +11,12 @@ keywords = ["bond"]
 repository = "https://github.com/kristof-mattei/bond-rs"
 include = ["src/**", "/LICENSE", "/LICENSE-*"]
 
+[dependencies]
+unicode-segmentation = "1.13.3"
+
+[dev-dependencies]
+pretty_assertions = "=1.4.1"
+
 [package.metadata.docs.rs]
 all-features = true
 rustdoc-args = ["--cfg", "docsrs"]
@@ -36,8 +42,7 @@ allow_attributes_without_reason = { level = "deny", priority = 127 }
 # arbitrary_source_item_ordering = { level = "deny", priority = 127 }
 # Debatable
 # arithmetic_side_effects = { level = "deny", priority = 127 }
-# Debatable, the ones below deny more specific occurences
-# as_conversions = { level = "deny", priority = 127 }
+as_conversions = { level = "deny", priority = 127 }
 as_pointer_underscore = { level = "deny", priority = 127 }
 as_underscore = { level = "deny", priority = 127 }
 assertions_on_result_states = { level = "deny", priority = 127 }
@@ -242,9 +247,3 @@ uninlined_format_args = { level = "allow", priority = 127 }
 [lints.rust]
 let_underscore_drop = { level = "deny", priority = 127 }
 non_ascii_idents = { level = "deny", priority = 127 }
-
-[dependencies]
-unicode-segmentation = "1.13.3"
-
-[dev-dependencies]
-pretty_assertions = "=1.4.1"
